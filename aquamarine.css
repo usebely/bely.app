@@ -6188,8 +6188,8 @@ body > * {
 .navbar {
   transition: background-color .5s ease-out; }
 
-.navbar-ontop {
-  background-color: transparent !important; }
+/*.navbar-ontop {
+  background-color: transparent !important; }*/
 
 /* Animate on entrance */
 .animate-in-down {
