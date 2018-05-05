@@ -191,11 +191,14 @@
       <div class="row">
         <div class="col-md-9">
           <p class="lead">Se inscreva para receber as Novidades!</p>
-          <form class="form-inline">
+          <form class="form-inline" name="gform" id="gform" enctype="text/plain" 
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfRtcf9FLGvHfc1uRSyAD3kLsRLFo41vPNKd3pIFXRz0AEkZw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
             <div class="form-group">
-              <input type="email" class="form-control my-1 mr-1" placeholder="Digite aqui seu e-mail"> </div>
+              <input type="email" class="form-control my-1 mr-1" placeholder="Digite aqui seu e-mail" name="entry.437761997" id="entry.437761997"> </div>
             <button type="submit" class="btn my-1 btn-outline-light">Inscrever</button>
           </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}">
+        </iframe>
         </div>
         <div class="col-4 col-md-1 align-self-center my-3">
           <a href="https://www.facebook.com/usebely" target="blank">
@@ -226,6 +229,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Script: Smooth scrolling between anchors in the same page -->
   <script src="smooth-scroll.js"></script>
+  <script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('E-mail recebido, muito obrigado pelo interesse!!');
+  });
+</script>
+  
 </body>
 
 </html>
